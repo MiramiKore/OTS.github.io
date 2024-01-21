@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LD Generator</title>
+  <link rel="icon" href="static/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav class="main-menu">
+    <input type ="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars"></i>
+    </label>
+    <label class="logo">LD Generator</label>
+      <ul class="open" id="top-menu">
+        <li><a class="scrollto" id="link" href="#main-view">Главная</a></li>
+        <li><a class="scrollto" id="link" href="#howwework">Принцип работы</a></li>
+        <li><a class="scrollto" id="link" href="#benefits">Преимущества</a></li>
+        <li><a class="scrollto" id="link" href="#field">Применение</a></li>
+        <li><a class="scrollto" id="link" href="#tech">Технологии</a></li>
+      </ul>
+  </nav>
+
+  <section class="anchor page-section hero-section" id="main-view">
+    <div class = "hero-img"> </div>
+    <div class = "hero-content">
+      <h1>
+        Генератор пресетов ландшафтного дизайна
+      </h1>
+      <p>
+        с интегрированным ИИ для разработки 3D игр
+      </p>
+
+    </div>  
+  </section>
+
+  
+  <section class="anchor page-section stages" id="howwework">
+      <h2 class="ttl">Как это будет работать?</h2>  
+      <p>
+          При создании проекта на игровом движке Unity через вкладку "Package Manager" подключается плагин из магазина "Unity Store", через который пользователь может
+          воспользоваться помощью искусственного интеллекта реализующего генерацию ландшафта через ввод текстового запроса, или настроить плагин вручную.
+      </p>
+    <!--<div class="stepper d-flex flex-column mt-5 ml-2">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">1</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Обращение клиента</h5>
+          <p class="lead text-muted pb-3">Заказчик обращается к нашей платформе для заказа собственного чат-бота</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">2</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Анализ заказа</h5>
+          <p class="lead text-muted pb-3">Мы проводим бесплатную консультацию с заказчиком, анализируя
+            конкретную ситуацию и конкурентоспособность создаваемого чат-бота,
+            выделяя особенности и условия заказа, готовя способы реализации</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">3</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Подготовка прототипа</h5>
+          <p class="lead text-muted pb-3">При согласии клиента на создание чат-бота, в течение некоторого времени
+            готовится прототип чат-бота (функциональные возможности, сценарии
+            работы бота, макет)</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">4</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Разработка чат-бота</h5>
+          <p class="lead text-muted pb-3">Производится разработка чат-бота, работающего на базе ИИ и машинного
+            обучения, под конкретные условия заказчика</p>
+        </div>
+      </div class="work-content">
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">5</div>
+          <div class="line h-100"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Интеграция и развертывание</h5>
+          <p class="lead text-muted pb-3">Завершаются операции по тестированию чат-бота. Производится интеграция
+            чат-бота в проект заказчика</p>
+        </div>
+      </div>
+      <div class="d-flex mb-1">
+        <div class="d-flex flex-column pr-4 align-items-center">
+          <div class="rounded-circle py-2 px-3 bg-primary text-white mb-1">6</div>
+          <div class="line h-100 d-none"></div>
+        </div>
+        <div class="work-content">
+          <h5 class="text-dark">Поддержка</h5>
+          <p class="lead text-muted pb-3">Заказчик получает доступ к базовому управлению чат-ботом, статистикой и
+            поддержкой 24/7 со стороны платформы</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  
+  <section class ="anchor page-section promo" id="benefits">
+    <h2 class="ttl">Наши преимущества</h2>  
+    <div class = "boxes">
+
+
+      <div class="box">
+        <h2>1</h2>
+        <h3>Удобство пользования</h3>
+        <p>Мы предлагаем удобный и интуитивно понятный интерфейс. Даже пользователь без специальных навыков сможет без труда создать красочный мир для своей игры.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>2</h2>
+        <h3>Открытый исходный код</h3>
+        <p>Данное решение позволит крупным компаниям и опытным пользователям изменять наш продукт под свои конкретные задачи, избегая ненужные параметры и типы генерации ландшафтов.</p>
+      </div>
+
+      <div class="box">
+        <h2>3</h2>
+        <h3>Уникальность генерации</h3>
+        <p>
+            Гибкая насторойка гарантирует разнообразие генерации ландшафтов и поможет пользователям создавать уникальные миры и выделятся на фоне конкуретнов.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>4</h2>
+        <h3>Поддержка ИИ</h3>
+        <p>Метод преобразования текста в готовый ландшафт сокращает время затраченное на разработку игры и дает начинающим пользователям возможность простого взаимодействия с нашим инструментом.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>5</h2>
+        <h3>Обратная связь</h3>
+        <p>
+            Публикация новостей о проделанной работе и активное взаимодействие с аудиторией по средстам собственного форума - способствует развитию продукта и устранению критических ошибок. Служба поддержи поможет с любыми возникающими вопросами.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class ="anchor page-section promo" id="field">
+    <h2 class="ttl">Сфера применения</h2>  
+    <div class = "boxes">
+      <div class="fields">
+        <div class="field-img" id="field-img1"> </div> 
+        <h4>Данная технология поможет в создании игр как инди-разработчикам, так и большим компаниям.</h4>
+        <p>
+          <ul>
+              <li>●  Экономия времени и бюджета - положительно скажется на игровой индустрии.</li>
+              <li>●  Ускорение реализации ландшафтного дизайна</li>
+              <li>● Акцентирование внимания на развитии других аспектов игры</li>
+          <li>● Отсутствие необходимости в специальных навыках</li>
+          <li>● Уникальность генерации</li>
+          </ul>
+        </p>
+      </div>
+
+    
+  </section>
+
+  <section class ="anchor page-section promo" id="tech">
+    <h2 class="ttl">Используемые нами технологии</h2>  
+    <div class = "boxes-alt" >
+
+      <div class="tech-box" id="one">
+        
+        <h3>C#</h3>
+        <p>Язык программирования, ориентированный под разработку игр и плагинов.</p>
+      </div>
+
+      <div class="tech-box" id="two">
+       
+        <h3>Unity</h3>
+        <p>Кроссплатформенная среда разработки компьютерных игр.</p>
+      </div>
+
+      <div class="tech-box" id="three">
+        
+        <h3>Git Hub</h3>
+        <p>
+            Крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.
+        </p>
+      </div>
+
+      <div class="tech-box" id="four">
+        <h3>Mid Jorney AI</h3>
+        <p>
+            Нейросеть нового поколения, которая умеет создавать изображения по предложенному ей тексту.
+        </p>
+      </div>
+
+      <div class="tech-box" id="five">
+        
+        <h3>Шум Прелина</h3>
+        <p>
+            Математический алгоритм по генерированию процедурной текстуры псевдо-случайным методом.
+        </p>
+      </div>
+
+      <div class="tech-box" id="six">
+        <h3>Симплекс шум</h3>
+        <p>
+            Метод построения n-мерной функции шума, сравнимой с шумом Перлина, но с меньшим количеством направленных артефактов и, в более высоких измерениях, меньшими вычислительными затратами.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="anchor page-section" id="price">
+    <h2 class="ttl">Стоимость и сроки разработки</h2>  
+    <p>
+        В планах нашей компании, продать 1500 копий за 6 месяцев, что является сроком окупаемости нашего продукта.
+        Затраты на разработку составят - 9.6 млн. ₽
+    </p>
+    </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
